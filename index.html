@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Torneio Valoroso</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="materialdesignicons.css">
+
+  
+</head>
+
+<body>
+
+  <video autoplay muted loop id="videobackground">
+    <source src="videobackground.mp4" type="video/mp4">
+  </video>
+  
+  <div class="navigation">
+    <div class="nav-dot active">a</div>
+    <div class="nav-dot">b</div>
+    <div class="nav-dot">c</div>
+  </div>
+  
+  <div class="player1 movable" data-move-value="3" id="player1">
+    
+  </div>
+  
+  <div class="logo_text">
+    
+    <img src="torneio_black.png" alt="" id="torneio_black">
+    <img src="torneio_colored.png" alt="" id="torneio_colored">
+    
+    <img src="valoroso_black.png" alt="" id="valoroso_black">    
+    <img src="valoroso_colored.png" alt="" id="valoroso_colored">
+    
+  </div>
+  
+  <div class="logo" data-tilt data-tilt-scale="1" data-tilt data-tilt-max="20">
+    <div class="spears">
+      <img src="left_spear.png" id="left_spear">
+      <img src="right_spear.png" id="right_spear">
+    </div>
+    
+    
+    
+    <div class="shield">
+      <img src="grind_shield.png" id="grind_shield">
+    </div>
+    
+    
+    
+  </div>
+  
+  <div class="player2 movable" data-move-value="6" id="player2">
+    
+  </div>
+  
+  <div class="div-radial-gradient"></div>
+  <div class="div-linear-gradient"></div>
+  
+  
+  
+  <script src="jquery-1.7.1.js"></script>
+  <script src="tilt.jquery.js"></script>
+  <script src="parallaxify.js"></script>
+  <script src="main.js"></script>
+
+  
+</body>
+
+</html>
