@@ -55,10 +55,11 @@ body {
   height: 40%;
   border-radius: 5px;
   cursor: pointer;
-  color: rgb(70, 70, 70);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.233);
   text-align: center;
-  line-height: 220%;
+  line-height: 150%;
   -webkit-text-size-adjust:none;
   -ms-text-size-adjust:none;
   -moz-text-size-adjust:none;
@@ -71,6 +72,7 @@ body {
 
 .nav-dot.active {
   background-color: #fff;
+  color: #45267A;
 }
 
 .centered {
