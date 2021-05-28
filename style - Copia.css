@@ -1,0 +1,251 @@
+/*Downloaded from https://www.codeseek.co/semibran/css-tournament-bracket-VjmPJd */
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700';
+html {
+  font-size: 1rem;
+  margin: none;
+  padding: none;
+}
+
+@font-face {
+  font-family: Mate-regular;
+  src: url(fonts/Mate-Regular.ttf)
+}
+
+@font-face {
+  font-family: Mate-italic;
+  src: url(fonts/Mate-Italic.ttf)
+}
+
+body {
+  background: #f0f2f2;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: none;
+  padding: none;
+  overflow: hidden;
+}
+
+#videobackground {
+  position:fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  #videobackground {
+      width:100%;
+      height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #videobackground { 
+      width:auto;
+      height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #videobackground {
+      display: none;
+  }
+}
+
+.div-radial-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0,0.5) 0%, rgba(27,98,255,0.9) 100%);
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0,0.5) 0%, rgba(27,98,255,0.9) 100%);
+  background: radial-gradient(circle, rgba(0, 0, 0,0.5) 0%, rgba(27,98,255,0.9) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#1b62ff",GradientType=1);
+}
+
+.div-linear-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0,0,0);
+  background: rgb(255,154,120);
+  background: -moz-linear-gradient(180deg, #93201ec0 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(180deg, #93201ec0 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, #93201ec0 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff9a78",endColorstr="#000000",GradientType=1);
+}
+
+.logo_text {
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  left: 0;
+  top: 10%;
+  right: 0;
+  width: 40%;
+  height: 22%;
+  background-color: translate;
+}
+
+#torneio_black {
+  position: absolute;
+  width: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+#valoroso_black {
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+
+#torneio_colored {
+  position: absolute;
+  width: 67.6%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -6%;
+}
+
+#valoroso_colored {
+  position: absolute;
+  width: 100.1%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 35.5%;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  margin: auto;
+  left: 0;
+  top: 30%;
+  bottom: 0;
+  right: 0;
+  width: 30%;
+  height: 68%;
+  background-color: transparent;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+
+.spears {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#left_spear {
+  position: absolute;
+  width: 100%;
+  right: 7%;
+  bottom: 20%;
+}
+
+#right_spear {
+  position: absolute;
+  width: 100%;
+  left: 7%;
+  bottom: 20%;
+}
+
+.shield {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: transparent;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateZ(50px)
+}
+
+#grind_shield {
+  position: absolute;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  width: 2%;
+  height: 10%;
+  background-color: transparent;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  right: 2%;
+}
+
+.nav-dot {
+  transition: 0.1s all;
+  margin: 15% 0;
+  position: relative;
+  width: auto;
+  height: 40%;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(70, 70, 70);
+  background-color: rgba(255, 255, 255, 0.233);
+  text-align: center;
+  line-height: 220%;
+  -webkit-text-size-adjust:none;
+  -ms-text-size-adjust:none;
+  -moz-text-size-adjust:none;
+  text-size-adjust:none;
+}
+
+.nav-dot:hover {
+  background-color: rgba(255, 255, 255, 0.418);
+}
+
+.nav-dot.active {
+  background-color: #fff;
+}
+
+.player1 {
+  position: absolute;
+  width: 15%;
+  height: 45%;
+  background-color: #fff;
+  margin: auto;
+  top: 40%;
+  bottom: 0;
+  left: 15%;
+  z-index: 1;
+  background-image: url(mage.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.player2 {
+  position: absolute;
+  width: 15%;
+  height: 45%;
+  background-color: #fff;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 15%;
+  z-index: 1;
+  background-image: url(knight.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
